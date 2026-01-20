@@ -1,27 +1,117 @@
+/* =========================
+   GLOBAL RESET
+========================= */
 html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
 body {
     font-size: 16px;
 }
 
+/* =========================
+   LOGO DEFAULT (DESKTOP)
+========================= */
 nav img.logo {
-    width: 70px;
+    width: 70px; /* fixed logo size */
+    max-width: 100%;
+    height: auto;
 }
 
-@media (max-width: 480px) {
+/* =========================
+   HERO TEXT DEFAULT
+========================= */
+.main-content .intro-heading {
+    font-size: 32px;
+}
 
-    section {
-        margin: 40px auto;
+.main-content .main-heading {
+    font-size: 110px;
+}
+
+/* =========================
+   LAPTOP ≤ 1024px
+========================= */
+@media (max-width: 1024px) {
+
+    body {
+        font-size: 15.5px;
     }
 
     nav img.logo {
-        width: 70px;
+        width: 70px; /* fixed logo size */
+    }
+
+    .main-content .main-heading {
+        font-size: 90px;
+    }
+
+    .service {
+        width: 300px;
+    }
+
+    #about-us .container {
+        gap: 60px;
+    }
+}
+
+/* =========================
+   TABLET ≤ 768px
+========================= */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    nav img.logo {
+        width: 70px; /* fixed logo size */
     }
 
     .nav-list {
         display: none;
+    }
+
+    .main-content .main-heading {
+        font-size: 70px;
+    }
+
+    .section-title h1 {
+        font-size: 42px;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    #about-us .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* =========================
+   MOBILE ≤ 480px
+========================= */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    nav img.logo {
+        width: 70px; /* fixed logo size */
+    }
+
+    section {
+        margin: 40px auto;
     }
 
     .main-content {
@@ -35,7 +125,7 @@ nav img.logo {
     }
 
     .main-content .main-heading {
-        font-size: 18px;
+        font-size: 38px;
         margin-top: 0;
     }
 
@@ -46,31 +136,16 @@ nav img.logo {
 
     .service {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
     }
 
     #testimonial h1 {
-        font-size: 20px;
+        font-size: 18px;
         padding: 0 10px;
-    }
-
-    #about-us .container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    #about-us img {
-        width: 100%;
     }
 
     #questions h1 {
         font-size: 32px;
-    }
-
-    footer .container {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
     }
 
     .footer-links {
@@ -78,133 +153,36 @@ nav img.logo {
     }
 }
 
-@media (max-width: 768px) {
-
-    .nav-list {
-        display: none;
-    }
-
-    .main-content .main-heading {
-        font-size: 70px;
-    }
-
-    .services {
-        justify-content: center;
-    }
-
-    .service {
-        width: 300px;
-    }
-
-    #about-us .container {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    footer .container {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-@media (max-width: 1024px) {
-
-    .main-content .main-heading {
-        font-size: 90px;
-    }
-
-    #about-us .container {
-        gap: 60px;
-    }
-
-    .service {
-        width: 300px;
-    }
-}
-
-/*New css*/
+/* =========================
+   VERY SMALL MOBILE ≤ 360px
+========================= */
 @media (max-width: 360px) {
 
     body {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     nav img.logo {
-        width: 70px;
+        width: 70px; /* fixed logo size */
     }
-    #main{
+
+    #main {
         min-height: 40vh;
     }
+
     .main-content .intro-heading {
-        font-size: 28px;
+        font-size: 18px;
     }
 
     .main-content .main-heading {
-        font-size: 20px;
-    }
-
-    .section-title h1 {
         font-size: 30px;
     }
 
-    #questions h1 {
-        font-size: 28px;
-    }
-}
-@media (max-width: 480px) {
-
-    body {
-        font-size: 14px;
-    }
-
-    nav img.logo {
-        width: 70px;
-    }
-
-    .main-content .intro-heading {
-        font-size: 20px;
-    }
-
-    .main-content .main-heading {
-        font-size: 38px;
-    }
-
     .section-title h1 {
-        font-size: 36px;
+        font-size: 26px;
     }
 
     #questions h1 {
-        font-size: 32px;
-    }
-}
-@media (max-width: 768px) {
-
-    body {
-        font-size: 15px;
-    }
-
-    nav img.logo {
-        width: 70px;
-    }
-
-    .main-content .main-heading {
-        font-size: 70px;
-    }
-
-    .section-title h1 {
-        font-size: 42px;
-    }
-}
-@media (max-width: 1024px) {
-
-    body {
-        font-size: 15.5px;
-    }
-
-    nav img.logo {
-        width: 150px;
-    }
-
-    .main-content .main-heading {
-        font-size: 90px;
+        font-size: 24px;
     }
 }
