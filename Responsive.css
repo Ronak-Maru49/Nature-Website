@@ -1,23 +1,112 @@
-/* ================================
-   LARGE DESKTOP (1400px+)
-================================ */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    font-size: 16px;
+}
+
+nav img.logo {
+    width: 160px;
+}
+
+@media (max-width: 480px) {
+
+    section {
+        margin: 40px auto;
+    }
+
+    nav img.logo {
+        width: 120px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .main-content {
+        margin-top: 40px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .main-content .intro-heading {
+        font-size: 20px;
     }
 
     .main-content .main-heading {
-        font-size: 120px;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #testimonial h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    #about-us .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #about-us img {
+        width: 100%;
+    }
+
+    #questions h1 {
+        font-size: 32px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
     }
 }
 
-/* ================================
-   DESKTOP (1200px)
-================================ */
-@media (max-width: 1200px) {
-    .container {
-        max-width: 1000px;
+@media (max-width: 768px) {
+
+    .nav-list {
+        display: none;
     }
+
+    .main-content .main-heading {
+        font-size: 70px;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .service {
+        width: 300px;
+    }
+
+    #about-us .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 1024px) {
 
     .main-content .main-heading {
         font-size: 90px;
@@ -26,195 +115,96 @@
     #about-us .container {
         gap: 60px;
     }
-}
-
-/* ================================
-   LAPTOP (992px)
-================================ */
-@media (max-width: 992px) {
-
-    .main-content .main-heading {
-        font-size: 72px;
-    }
 
     .service {
         width: 300px;
     }
 }
 
-/* ================================
-   TABLET (768px)
-================================ */
-@media (max-width: 768px) {
+/*New css*/
+@media (max-width: 360px) {
 
-    /* NAVBAR */
-    nav {
-        position: relative;
+    body {
+        font-size: 16px;
     }
 
-    .menu-btn {
-        display: block;
-        width: 30px;
-        cursor: pointer;
+    nav img.logo {
+        width: 100px;
     }
-
-    .nav-list {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background: var(--primary);
-        flex-direction: column;
-        display: none;
+    #main{
+        min-height: 40vh;
     }
-
-    .nav-list li {
-        padding: 12px 0;
-        text-align: center;
-    }
-
-    /* ABOUT */
-    #about-us .container {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
-
-    #about-us .about-content {
-        align-items: center;
-    }
-
-    /* FOOTER */
-    footer .container {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-}
-
-/* ================================
-   MOBILE (576px)
-================================ */
-@media (max-width: 576px) {
-
-    .main-content {
-        margin-top: 40px;
-        text-align: center;
-    }
-
     .main-content .intro-heading {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .main-content .main-heading {
-        font-size: 56px;
+        font-size: 20px;
     }
 
     .section-title h1 {
-        font-size: 32px;
-    }
-
-    .service {
-        width: 100%;
-        text-align: center;
-    }
-
-    #testimonial h1 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     #questions h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
+@media (max-width: 480px) {
 
-/* ================================
-   SMALL MOBILE (400px)
-================================ */
-@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav img.logo {
+        width: 120px;
+    }
 
     .main-content .intro-heading {
         font-size: 20px;
     }
 
     .main-content .main-heading {
-        font-size: 44px;
-    }
-
-    .btn {
-        padding: 8px 14px;
-        font-size: 13px;
+        font-size: 38px;
     }
 
     .section-title h1 {
-        font-size: 26px;
-    }
-}
-
-/* ================================
-   EXTRA SMALL (300px)
-================================ */
-@media (max-width: 300px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .container {
-        padding: 8px;
-    }
-
-    .main-content {
-        margin-top: 20px;
-    }
-
-    .main-content .intro-heading {
-        font-size: 16px;
-    }
-
-    .main-content .main-heading {
-        font-size: 34px;
-        line-height: 1.1;
-    }
-
-    .main-content p {
-        font-size: 12px;
-    }
-
-    .section-title h1 {
-        font-size: 22px;
+        font-size: 36px;
     }
 
     #questions h1 {
-        font-size: 22px;
-    }
-
-    footer .container {
-        font-size: 12px;
-        gap: 8px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 6px;
+        font-size: 32px;
     }
 }
+@media (max-width: 768px) {
 
-/* ================================
-   ULTRA SMALL (1px – 200px)
-================================ */
-@media (max-width: 200px) {
+    body {
+        font-size: 15px;
+    }
 
-    * {
-        font-size: 10px;
+    nav img.logo {
+        width: 140px;
     }
 
     .main-content .main-heading {
-        font-size: 24px;
+        font-size: 70px;
     }
 
-    .btn {
-        padding: 4px 8px;
-        font-size: 10px;
+    .section-title h1 {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1024px) {
+
+    body {
+        font-size: 15.5px;
+    }
+
+    nav img.logo {
+        width: 150px;
+    }
+
+    .main-content .main-heading {
+        font-size: 90px;
     }
 }
