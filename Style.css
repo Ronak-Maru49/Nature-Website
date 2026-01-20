@@ -18,7 +18,7 @@ body {
 }
 
 #main {
-    background-image: url('../img/main.png');
+    background-image: url('main.png');
     min-height: 70vh;
     background-position: bottom center;
     background-size: cover;
@@ -188,7 +188,7 @@ nav {
 
 #questions {
     min-height: 500px;
-    background-image: url('../img/main-2.png');
+    background-image: url('main-2.png');
     background-position: bottom center;
     background-size: cover;
 }
@@ -317,6 +317,7 @@ footer .container {
         text-align: center;
     }
 }
+
 
 
 
